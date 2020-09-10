@@ -30,6 +30,10 @@ body{
     scroll-behavior: smooth;
 }
 
+.people::-webkit-scrollbar {
+    display: none;
+  }
+
 main{
     margin: 0 20px 0;
 }
