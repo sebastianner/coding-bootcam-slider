@@ -1,4 +1,21 @@
+@media screen and (max-height:320px){
+    body{
+        overflow: scroll;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:285px){
+    body{
+        height: fit-content;
+    }
+}
+
 @media screen and (max-width:320px){
+    body{
+        overflow-y: scroll;
+    }
+    
     .testimonials{
         margin-top: 0;
     }
