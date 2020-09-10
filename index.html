@@ -3,17 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Coding Bootcamp Testimonials Slider</title>
   </head>
   <body>
-    “ I’ve been interested in coding for a while but never taken the jump, until
-    now. I couldn’t recommend this course enough. I’m now in the job of my
-    dreams and so excited about the future. ” Tanya Sinclair UX Engineer “ If
-    you want to lay the best foundation possible I’d recommend taking this
-    course. The depth the instructors go into is incredible. I now feel so
-    confident about starting up as a professional developer. ” John Tarkpor
-    Junior Front-end Developer
+    <div class="people">
+      <div class="person" id="tanya">
+            <main>
+              <article class="main-bg">
+                <figure class="main-userpic">
+                  <img src="/images/image-tanya.jpg" alt="user">
+                  <div class="button-container">
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/></svg></a>
+                    <a href="#john" id="btn_person_1"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/></svg></a>
+                  </div>
+                </figure>
+              </article>
+            </main>
+            <section class="testimonials">
+              <article class="testimonial">
+                <p>“ I’ve been interested in coding for a while but never taken the jump, until
+                now. I couldn’t recommend this course enough. I’m now in the job of my
+                dreams and so excited about the future.”</p>
+              </article>
+              <article class="user-details">
+                <h1>Tanya Sinclair</h1>
+                <h2><small>UX Engenieer</small></h2>
+              </article>
+            </section>
+      </div>
+      <div class="person" id="john">
+            <main>
+              <article class="main-bg">
+                <figure class="main-userpic">
+                  <img src="/images/image-john.jpg" alt="user">
+                  <div class="button-container">
+                    <a href="#tanya" id="btn_person_2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/></svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/></svg></a>
+                  </div>
+                </figure>
+              </article>
+            </main>
+            <section class="testimonials">
+              <article class="testimonial">
+                <p>“ If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.”</p>
+              </article>
+              <article class="user-details">
+                <h1>John Takpor</h1>
+                <h2><small>Junior Front-end Developer</small></h2>
+              </article>
+            </section>
+      </div>
+    </div>
+    <script src="/scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root{
+    --family:'Inter', sans-serif;
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url('/images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 80% 12%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.people{
+    display: grid;
+    grid-template-columns: repeat(2,100vw);
+    grid-template-rows: repeat(1,auto);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+main{
+    margin: 0 20px 0;
+}
+
+.main-bg{
+    height: 340px;
+    background-image: url('/images/pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-userpic{
+    position: relative;
+    height:fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-userpic img{
+    width: 75%;
+    height: auto;
+    max-width: 350px;
+    box-shadow: 0px 0px 14px 0px rgba(168,158,168,1);
+    border-radius: 5px;
+}
+
+.button-container{
+    position: absolute;
+    bottom: -25px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0px 0px 14px 0px rgba(168,158,168,1);
+    padding: 10px;
+}
+
+.button-container a{
+    cursor: pointer;
+}
+
+.testimonials{
+    height: auto;
+    background-image: url('/images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 70px;
+    margin-top: 15px;
+}
+
+.testimonial{
+    font-family: var(--family);
+    text-align: center;
+    margin: 0 50px;
+    padding-top: 20px;
+}
+
+.testimonial p{
+    width: 275.200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.user-details{
+    font-family: var(--family);
+    text-align: center;
+    margin-top: 20px;
+    overflow: initial;
+}
+
+.user-details h1{
+    color: hsl(240, 38%, 20%);
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.user-details h2{
+    font-size: 16px;
+    opacity: .3;
+}
+
+.person{
+    transform: scale(.98);
+    transition: all .3s;
+}
+
+.person.active{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
